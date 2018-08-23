@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alert_dialog_backgound_color"
+    android:gravity="center_horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtEditEskiTakimAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="1.Takim"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="@+id/editTextYeniTakimAdi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAdiniDegistir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="Adını Değiştir"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEditEskiTakimAdi"
+            app:layout_constraintStart_toEndOf="@+id/txtEditEskiTakimAdi"
+            app:layout_constraintTop_toTopOf="@+id/txtEditEskiTakimAdi" />
+
+        <EditText
+            android:id="@+id/editTextYeniTakimAdi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnEdit"
+            app:layout_constraintStart_toStartOf="@+id/btnCancel"
+            app:layout_constraintTop_toBottomOf="@+id/txtEditEskiTakimAdi" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/alert_dialog_button_cancel_shape"
+            android:text="Vazgeç"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextYeniTakimAdi" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/alert_dialog_button_edit_shape"
+            android:text="Değiştir"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCancel"
+            app:layout_constraintStart_toEndOf="@+id/btnCancel"
+            app:layout_constraintTop_toTopOf="@+id/btnCancel" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

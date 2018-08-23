@@ -20,6 +20,7 @@ public class ScoreTableAdapter extends BaseAdapter{
     public ScoreTableAdapter(Context context, List<ScoreTableModel> scoreTableModels) {
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.scoreTableModels = scoreTableModels;
+        notifyDataSetChanged();
     }
 
     @Override

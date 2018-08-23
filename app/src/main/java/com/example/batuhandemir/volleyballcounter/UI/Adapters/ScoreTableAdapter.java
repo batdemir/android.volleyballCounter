@@ -58,9 +58,12 @@ public class ScoreTableAdapter extends BaseAdapter{
         if(Integer.parseInt(scoreTableModels.get(position).getTakimBirScore()) > Integer.parseInt(scoreTableModels.get(position).getTakimIkiScore())){
             txtEditTakimBirScore.setTextColor(rowView.getContext().getColor(R.color.winner_text_color));
             txtEditTakimIkiScore.setTextColor(rowView.getContext().getColor(R.color.loser_text_color));
-        }else {
+        }else if(Integer.parseInt(scoreTableModels.get(position).getTakimBirScore()) < Integer.parseInt(scoreTableModels.get(position).getTakimIkiScore())) {
             txtEditTakimBirScore.setTextColor(rowView.getContext().getColor(R.color.loser_text_color));
             txtEditTakimIkiScore.setTextColor(rowView.getContext().getColor(R.color.winner_text_color));
+        }else {
+            txtEditTakimBirScore.setTextColor(rowView.getContext().getColor(R.color.list_item_text_color));
+            txtEditTakimIkiScore.setTextColor(rowView.getContext().getColor(R.color.list_item_text_color));
         }
 
         return rowView;

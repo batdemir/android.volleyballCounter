@@ -186,6 +186,11 @@ public class MainActivity extends AppCompatActivity {
                                     ScoreTableAdapter adapter = new ScoreTableAdapter(getBaseContext(),scoreList);
                                     adapter.notifyDataSetChanged();
                                     listViewScore.setAdapter(adapter);
+
+                                    txtEditTakimBirCount.setText("00");
+                                    txtEditTakimIkiCount.setText("00");
+                                    takimBirScore=00;
+                                    takimIkiScore=00;
                                     dialogInterface.dismiss();
                                 }
                             })

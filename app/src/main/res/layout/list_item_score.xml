@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtEditSetNumarasi"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1.Set"
+            android:textColor="@color/list_item_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEditTakimBir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="1.Takım"
+            android:textColor="@color/list_item_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEditSetNumarasi"
+            app:layout_constraintStart_toEndOf="@+id/txtEditSetNumarasi"
+            app:layout_constraintTop_toTopOf="@+id/txtEditSetNumarasi" />
+
+        <TextView
+            android:id="@+id/txtEditTakimBirScore"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="22"
+            android:textColor="@color/loser_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEditTakimBir"
+            app:layout_constraintStart_toEndOf="@+id/txtEditTakimBir"
+            app:layout_constraintTop_toTopOf="@+id/txtEditTakimBir" />
+
+        <TextView
+            android:id="@+id/txtEditTakimIki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2.Takım"
+            android:textColor="@color/list_item_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEditTakimBirScore"
+            app:layout_constraintStart_toEndOf="@+id/txtEditTakimBirScore"
+            app:layout_constraintTop_toTopOf="@+id/txtEditTakimBirScore" />
+
+        <TextView
+            android:id="@+id/txtEditTakimIkiScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="25"
+            android:textColor="@color/winner_text_color"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtEditTakimIki"
+            app:layout_constraintStart_toEndOf="@+id/txtEditTakimIki"
+            app:layout_constraintTop_toTopOf="@+id/txtEditTakimIki" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

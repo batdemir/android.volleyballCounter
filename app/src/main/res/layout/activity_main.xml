@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:gravity="center_horizontal"
+    tools:context=".UI.Activity.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBtnTakimBirEdit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/icon_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtnTakimIkiEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgBtnTakimIkiEdit" />
+
+        <ImageView
+            android:id="@+id/imgBtnTakimIkiEdit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/icon_edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgTakimBirBox"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/shape_takim_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEditTakimBir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Takım"
+            android:textColor="@color/takim_text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimBirBox"
+            app:layout_constraintEnd_toEndOf="@+id/imgTakimBirBox"
+            app:layout_constraintStart_toStartOf="@+id/imgTakimBirBox"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimBirBox" />
+
+        <ImageView
+            android:id="@+id/imgTakimIkiBox"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/shape_takim_box"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimBirBox"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimBirBox"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtEditTakimIki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Takım"
+            android:textColor="@color/takim_text_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimIkiBox"
+            app:layout_constraintEnd_toEndOf="@+id/imgTakimIkiBox"
+            app:layout_constraintStart_toStartOf="@+id/imgTakimIkiBox"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimIkiBox" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBtnTakimBirCountAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/icon_count_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgBtnTakimBirCountDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_count_delete"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtnTakimBirCountAdd"
+            app:layout_constraintStart_toStartOf="@+id/imgBtnTakimBirCountAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnTakimBirCountAdd" />
+
+        <ImageView
+            android:id="@+id/imgTakimBirCountBox"
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/shape_count_box"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtnTakimBirCountDelete"
+            app:layout_constraintStart_toEndOf="@+id/imgBtnTakimBirCountAdd"
+            app:layout_constraintTop_toTopOf="@+id/imgBtnTakimBirCountAdd" />
+
+        <TextView
+            android:id="@+id/txtEditTakimBirCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@android:color/black"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimBirCountBox"
+            app:layout_constraintEnd_toEndOf="@+id/imgTakimBirCountBox"
+            app:layout_constraintStart_toStartOf="@+id/imgTakimBirCountBox"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimBirCountBox" />
+
+
+        <ImageView
+            android:id="@+id/imgBtnTakimIkiCountAdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/icon_count_add"
+            app:layout_constraintStart_toEndOf="@+id/imgTakimIkiCountBox"
+            app:layout_constraintTop_toTopOf="@+id/imgBtnTakimBirCountAdd" />
+
+        <ImageView
+            android:id="@+id/imgBtnTakimIkiCountDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_count_delete"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtnTakimIkiCountAdd"
+            app:layout_constraintStart_toStartOf="@+id/imgBtnTakimIkiCountAdd"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnTakimIkiCountAdd" />
+
+        <ImageView
+            android:id="@+id/imgTakimIkiCountBox"
+            android:layout_width="110dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/shape_count_box"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimBirCountBox"
+            app:layout_constraintStart_toEndOf="@+id/imgTakimBirCountBox"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimBirCountBox" />
+
+        <TextView
+            android:id="@+id/txtEditTakimIkiCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@android:color/black"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgTakimIkiCountBox"
+            app:layout_constraintEnd_toEndOf="@+id/imgTakimIkiCountBox"
+            app:layout_constraintStart_toStartOf="@+id/imgTakimIkiCountBox"
+            app:layout_constraintTop_toTopOf="@+id/imgTakimIkiCountBox" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgBtnSetiBitir"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/shape_button_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSetiBitir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETİ BİTİR"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtnSetiBitir"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtnSetiBitir"
+            app:layout_constraintStart_toStartOf="@+id/imgBtnSetiBitir"
+            app:layout_constraintTop_toTopOf="@+id/imgBtnSetiBitir" />
+
+        <ImageView
+            android:id="@+id/imgBtnMaciBitir"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/shape_button_box"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtnSetiBitir"
+            app:layout_constraintStart_toStartOf="@+id/imgBtnSetiBitir"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtnSetiBitir" />
+
+        <TextView
+            android:id="@+id/txtMaciBitir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAÇI BİTİR"
+            android:textColor="@color/button_text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgBtnMaciBitir"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtnMaciBitir"
+            app:layout_constraintStart_toStartOf="@+id/imgBtnMaciBitir"
+            app:layout_constraintTop_toTopOf="@+id/imgBtnMaciBitir" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgScoreBoard"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/shape_score_box"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSkorTablosu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKOR TABLOSU"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imgScoreBoard"
+            app:layout_constraintEnd_toEndOf="@+id/imgScoreBoard"
+            app:layout_constraintStart_toStartOf="@+id/imgScoreBoard"
+            app:layout_constraintTop_toTopOf="@+id/imgScoreBoard" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewScore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"></ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
